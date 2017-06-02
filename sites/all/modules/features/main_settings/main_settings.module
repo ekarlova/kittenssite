@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Main settings feature.
+ */
+
+include_once 'main_settings.features.inc';
