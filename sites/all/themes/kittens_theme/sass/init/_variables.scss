@@ -78,7 +78,7 @@ $arial:           Arial, Helvetica, 'Nimbus Sans L', sans-serif;
 $impact:          Impact, 'Arial Narrow', Helvetica, sans-serif;
 
 //Kittens font
-$kittens:         Kitten-Bold, 'Arial Bold', sans-serif;
+$kittens:         'Kitten-Bold', 'Arial Bold', sans-serif;
 
 // Monospace font stacks.
 // For an explanation of why "sans-serif" is at the end of this list, see
@@ -104,7 +104,9 @@ $typefaces: (
 );
 
 //Colors
-
+$header: #000;
+$main: #fff;
+$blue: #00A5ca;
 
 // Output a horizontal grid to help with debugging typography.
 $typey-debug: false;
@@ -194,14 +196,4 @@ $include-rtl: true;
 // Automatically turn off Zen Grids' RTL support if $include-rtl is false.
 @if not $include-rtl {
   $zen-rtl-selector: false !global;
-}
-
-@font-face {
-  font-family: 'Kitten-Bold';
-  src:url('../../fonts/Kitten-Bold/Kitten-Bold.ttf.woff') format('woff'),
-  url('../../fonts/Kitten-Bold/Kitten-Bold.ttf.svg#Kitten-Bold') format('svg'),
-  url('../../fonts/Kitten-Bold/Kitten-Bold.ttf.eot'),
-  url('../../fonts/Kitten-Bold/Kitten-Bold.ttf.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
 }

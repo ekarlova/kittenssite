@@ -1,0 +1,42 @@
+//Footer
+footer {
+  background: $header;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  min-height: 100px;
+  font-family: $georgia;
+  font-style: italic;
+  font-weight: bold;
+  .block-menu {
+    float: left;
+    h2 {
+      display: none;
+    }
+    .menu {
+      li {
+        display: inline-block;
+        list-style: none;
+        border-right: 1px dashed $blue;
+        padding: 0 10px;
+        &:last-child {
+          border: 0;
+        }
+        a {
+          color: $main;
+          font-size: 20px;
+          text-decoration: none;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  #block-block-1 {
+    float: right;
+    p {
+      color: $main;
+    }
+  }
+}

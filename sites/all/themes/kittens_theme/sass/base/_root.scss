@@ -26,4 +26,10 @@ body {
   padding: 0;
   color: color(text);
   background-color: color(text-bg);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  & > .layout-center {
+    flex: 1;
+  }
 }

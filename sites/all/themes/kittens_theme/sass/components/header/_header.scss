@@ -11,6 +11,14 @@
 .header,
 %header {
   @extend %clearfix;
+  background: $header;
+  padding: 5px 0;
+  margin-bottom: 25px;
+  .layout-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   // Wrapping link for logo.
   &__logo {
@@ -37,14 +45,22 @@
   // The name of the website.
   &__site-name {
     @extend %h1;
-    margin: 0;
+    margin: 20px 20px 0 0;
+    font-size: 70px;
+    a {
+      color: $main;
+      font-family: $kittens;
+      &:hover {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
   }
 
   // The link around the name of the website.
   &__site-link {
     &:link,
     &:visited {
-      color: color(text);
       text-decoration: none;
     }
 
@@ -59,12 +75,22 @@
     margin: 0;
   }
 
-  // The secondary menu (login, etc.)
-  &__secondary-menu {
-    float: right;
-
-    @include rtl() {
-      float: left;
+  &__main-menu {
+    font-family: $kittens;
+    .navbar li {
+      border-right: 1px dashed $blue;
+      padding: 0 15px;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    a {
+      color: $main;
+      text-decoration: none;
+      font-size: 30px;
+      &:hover {
+        color: $blue;
+      }
     }
   }
 

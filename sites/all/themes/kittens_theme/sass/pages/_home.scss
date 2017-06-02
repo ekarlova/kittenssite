@@ -1,0 +1,17 @@
+//Homepage styles
+.node-2 {
+  .field-type-text-with-summary ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      border: 1px dashed $blue;
+      padding: 5px;
+      margin: 5px;
+      img {
+        display: block;
+      }
+    }
+  }
+}

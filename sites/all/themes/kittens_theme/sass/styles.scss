@@ -52,6 +52,7 @@
 @import 'components/comment/comment';
 @import 'components/divider/divider';
 @import 'components/header/header';
+@import 'components/footer/footer';
 @import 'components/hidden/hidden';
 @import 'components/highlight-mark/highlight-mark';
 @import 'components/inline-links/inline-links';
@@ -98,3 +99,7 @@
 @import 'forms/progress-throbber/progress-throbber';
 @import 'forms/resizable-textarea/resizable-textarea';
 @import 'forms/table-drag/table-drag';
+
+//Pages
+@import 'pages/home';
+@import 'pages/article';

@@ -1,0 +1,84 @@
+//Articles Page
+.page-articles {
+  .view-related-nodes {
+    .views-row {
+      border-bottom: 1px dashed $blue;
+      margin-bottom: 50px;
+    }
+    .views-field-field-image {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+    .views-field-title {
+      font-family: $kittens;
+      a {
+        color: $header;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    .views-field-created {
+      color: $blue;
+      font-style: italic;
+      font-weight: bold;
+      font-family: $georgia;
+      float: right;
+    }
+    .views-field-body {
+      clear: both;
+    }
+  }
+}
+
+//Single article page
+.node-type-article {
+  .submitted {
+    font-style: italic;
+    font-weight: bold;
+    font-family: $georgia;
+  }
+  .field-type-image {
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+  .field-name-field-tags {
+    .field-label {
+      font: italic bold 30px $georgia;
+    }
+    .field-items a {
+      font-family: $kittens;
+      color: $blue;
+      text-decoration: none;
+      &:hover {
+        color: $header;
+      }
+    }
+  }
+  #block-views-related-nodes-block {
+    h2 {
+      font-family: $kittens;
+    }
+    .views-row {
+      border-bottom: 1px dashed $blue;
+      margin-bottom: 20px;
+      width: 100%;
+      @include clearfix;
+    }
+    .views-field-field-image {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+    .views-field-title {
+      font-family: $kittens;
+      font-size: 20px;
+      a {
+        color: $header;
+        text-decoration: none;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

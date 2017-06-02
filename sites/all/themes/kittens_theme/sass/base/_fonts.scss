@@ -31,3 +31,13 @@
 //   font-weight: normal;
 //   font-style: normal;
 // }
+
+@font-face {
+  font-family: 'Kitten-Bold';
+  src:url('../fonts/Kitten-Bold/Kitten-Bold.ttf.woff') format('woff'),
+  url('../fonts/Kitten-Bold/Kitten-Bold.ttf.svg#Kitten-Bold') format('svg'),
+  url('../fonts/Kitten-Bold/Kitten-Bold.ttf.eot'),
+  url('../fonts/Kitten-Bold/Kitten-Bold.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
